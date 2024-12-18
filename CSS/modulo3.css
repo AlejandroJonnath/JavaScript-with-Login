@@ -1,0 +1,93 @@
+/* CSS inspirado en Sword Art Online - Optimizado para Rendimiento y Profesionalismo */
+
+/* Reinicio General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    background: #000000 url('../src/sao.gif') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    /* Eliminación de animación de fondo para mejorar rendimiento */
+}
+
+main {
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 15px;
+    text-align: center;
+    /* Eliminación de animación glow para mayor rendimiento */
+}
+
+p, li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+
+li {
+    margin-left: 25px;
+    list-style-type: disc;
+    background: rgba(0, 255, 255, 0.15);
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
+    transition: background 0.2s ease;
+}
+
+li:hover {
+    background: rgba(0, 255, 255, 0.3);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    section:hover {
+        transform: none;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+}

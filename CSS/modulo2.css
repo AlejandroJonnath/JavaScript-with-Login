@@ -1,0 +1,78 @@
+/* Beyond: Two Souls Inspired Styles */
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Background */
+body {
+    background: url('../src//jiji.gif') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeInBackground 3s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+
+/* Section Styling */
+section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.7);
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    text-shadow: 0 0 10px #00aaff;
+    margin-bottom: 1rem;
+}
+
+p, li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 0 0 5px #00aaff;
+}
+
+li {
+    list-style-type: none;
+    background: rgba(0, 170, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+}
