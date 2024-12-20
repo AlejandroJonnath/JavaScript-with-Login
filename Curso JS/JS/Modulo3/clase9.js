@@ -7,16 +7,14 @@
 //si no puedes hacer un console.log es declaración
 //si lo deja, es una expresión
 
-//Expresiones
-//Cualquier linea de código que evalue un valor
+//Expresiones: Cualquier linea de código que evalue un valor
 /*
 4+6= 10
 x= 4
 miFuncion()
 */
 
-//Declaraciones
-//Creamos algo que vamos a referenciar en el futuro
+//Declaraciones: Creamos algo que vamos a referenciar en el futuro
 /*
 let
 const
